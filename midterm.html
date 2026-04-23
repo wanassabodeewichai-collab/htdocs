@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ระบบลงทะเบียนกิจกรรม</title>
+</head>
+<body>
+    <h3>ระบบตรวจสอบสิทธิ์การลงทะเบียนกิจกรรม</h3>
+    <form method="POST">
+        ชื่อ-นามสกุล: <input type="text" name="u" required><br><br>
+        ปีเกิด (พ.ศ.): <input type="number" name="y" required><br><br>
+        
+        ประเภทกิจกรรม: 
+        <select name="activity" required>
+            <option value="">-- เลือกกิจกรรม --</option>
+            <option value="Workshop">Workshop Programming (15 ปีขึ้นไป)</option>
+            <option value="Hackathon">Hackathon (18 ปีขึ้นไป)</option>
+            <option value="Research">Research Conference (20 ปีขึ้นไป)</option>
+        </select><br><br>
+        
+        <input type="submit" value="ตรวจสอบสิทธิ์">
+    </form>
+    <hr>
+</body>
+</html>
